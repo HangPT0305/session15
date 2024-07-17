@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var student = {
+            id:"SD01",
+            fullName:"Nguyen Thi Thuy",
+            phone:"0134456",
+            address:"Hai Duong",
+            showInfo:function(){
+                document.write(`<h1>ma sinh vien: ${this.id}</h1>`)
+                document.write(`<h1>Ten sinh vien: ${this.fullName}</h1>`)
+                document.write(`<h1>So dien thoai sinh vien: ${this.phone}</h1>`)
+                document.write(`<h1>dia chi sinh vien: ${this.address}</h1>`)
+            }
+        }
+        student.showInfo();
+    </script>
+</body>
+</html>

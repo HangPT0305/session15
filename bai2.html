@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // debai:Viết chương trình khai báo đối tượng information
+        //  có các thuộc tính id, name, phone, address. 
+        //  Tiến hành xóa thuộc tính address và thêm thuộc tính email cho đối tượng 
+        // và in đối tượng ra màn hình.
+        var student = {
+            id:"SB06",
+            fullName: "Nguyen Thai An",
+            phone:"098576733",
+            address:"Bac Ninh",
+            showInfo:function(){
+                document.write(`<h1>ma sinh vien: ${this.id}</h1>`)
+                document.write(`<h1>ten sinh vien: ${this.fullName}</h1>`)
+                document.write(`<h1>sdt sinh vien: ${this.phone}</h1>`)
+                document.write(`<h1>dia chi sinh vien: ${this.address}</h1>`)
+                document.write(`<h1>email sinh vien: ${this.email}</h1>`)
+                
+            }
+        }
+        // tien hanh them va xoa
+        delete address;
+        student.email = "nhi178@gmail.com";
+        // in doi tuong
+        student.showInfo();
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Student {
+            constructor(id,name){
+                this.id = id;
+                this.name = name;
+            }
+        }
+        var n = prompt("nhap so luong sinh vien can them");
+        var students = [];
+        for(i = 0; i < n;i++){
+            alert("nhap thong tin sinh vien thu" + (i+1));
+            var id = prompt("nhap vao id sv");
+            var name = prompt("nhap vao ten sv");
+            var student = new Student(id, name);
+            students.push(student)
+        }
+
+        var _html = "";
+        for (const st of students){
+            _html += `<li>${st.name}</li>`
+        }
+        console.log(_html);
+        // in thong tin
+        document.write(` <ul>
+            ${_html}
+            </ul>`)
+
+
+    </script>
+</body>
+</html>
